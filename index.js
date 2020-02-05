@@ -14,7 +14,7 @@ module.exports = postcss.plugin('postcss-root-to-json', (opts = { outputPath }) 
       }
     });
 
-    fs.writeFile(outputPath, JSON.stringify(rootCustomProperties), function(err, result) {
+    fs.writeFile(opts.outputPath, JSON.stringify(rootCustomProperties), function(err, result) {
       if(err) console.log('error', err);
     });
   }

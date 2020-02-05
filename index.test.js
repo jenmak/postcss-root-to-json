@@ -8,10 +8,6 @@ async function run (input, output, opts) {
   expect(result.warnings()).toHaveLength(0)
 }
 
-/* Write tests here
-
 it('does something', async () => {
-  await run('a{ }', 'a{ }', { })
+  await run('a{ }', 'a{ }', { outputPath: './file.json' })
 })
-
-*/
