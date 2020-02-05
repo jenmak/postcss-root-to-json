@@ -5,18 +5,25 @@
 [PostCSS]: https://github.com/postcss/postcss
 
 ```css
-.foo {
-    /* Input example */
+:root {
+    --custom-color: #fff;
+}
+
+:root {
+    --custom-size: 2em;
 }
 ```
 
-```css
-.foo {
-  /* Output example */
+```json
+{ 
+  "--custom-color": "#fff",
+  "--custom-size": "2em"
 }
 ```
 
 ## Usage
+
+Add the output path as an option: `{ output: \'output.json\' }`
 
 Check you project for existed PostCSS config: `postcss.config.js`
 in the project root, `"postcss"` section in `package.json`
